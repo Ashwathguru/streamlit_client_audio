@@ -20,7 +20,7 @@ button = st.button("Submit")
 if button:
   st.write(get_answer_csv(query))
   text = get_answer_csv(query)
-  tts_button = Button(label="Play", width=100)
+  tts_button = Button(label="Talk to me", width=100)
 
   tts_button.js_on_event("button_click", CustomJS(code=f"""
     var u = new SpeechSynthesisUtterance();
